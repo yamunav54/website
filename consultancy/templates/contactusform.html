@@ -1,10 +1,14 @@
-<div id ="container">
-    <div class ="message">
-        <form action="" method="post">  {% csrf_token %}
-            <h2><b>Submit your enquiry Here:</b></h2></br>
-            {{ form.as_p}}
-            <input type="Submit" value="Submit">
-        </form>
 
+<div id ="container3">
+    <h2><b>Leave us a message:</b></h2></br>
+    <div id ="message">
+        <form action="" method="post">  {% csrf_token %}
+
+            {{ form.as_p}}
+            <input type="SUBMIT" value="SUBMIT"></br>
+
+        </form>
     </div>
+    <h2><b>WE WILL GET BACK TO YOU AS SOON AS POSSIBLE</b></h2>
+
 </div>
