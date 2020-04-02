@@ -340,6 +340,12 @@ ul li a:hover{
     border:ridge;
     line-height: 30px;
 }
+
+.rightbx p{
+    line-height: 33px;
+}
+
+
 #container2{
     /*    background:rgb(194, 150, 194);*/
     height:450px;
@@ -368,7 +374,9 @@ ul li a:hover{
     border:ridge;
     line-height: 30px;
 }
-
+#rightbx p{
+    line-height: 55px;
+}
 
 footer{
     background-color: rgb(95, 84, 84);
@@ -435,3 +443,16 @@ footer{
   .sociallinks p{
       text-align: center;
   }
+
+#container2{
+    height:650px;
+    width:90%;
+    border:ridge;
+    padding:20px;
+    border-radius: 1ch;
+}
+
+#message{
+    padding:30px;
+    border:ridge;
+}

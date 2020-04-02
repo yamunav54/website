@@ -1,0 +1,10 @@
+<div id ="container">
+    <div class ="message">
+        <form action="" method="post">  {% csrf_token %}
+            <h2><b>Submit your Resume Here:</b></h2></br>
+            {{ form.as_p}}
+            <input type="Submit" value="Submit">
+        </form>
+
+    </div>
+</div>

@@ -17,23 +17,14 @@
     </p>
 
     </div>
-    <div id ="rightbx"><form action="" method="post">  {% csrf_token %}
-        {{ form.as_p}}
-        First name:<br>
-        <input type="text" name="title" placeholder="Enter your name"></br>
-        Last name:<br>
-        <input type="text" name="title" placeholder="Enter your title"></br>
-        E-mail id:<br>
-        <input type="text" name="title" placeholder="Enter your title"></br>
-        Phone no:<br>
-        <input type="text" name="title" placeholder="Enter your title"></br>
-        Qualifications:<br>
-        <input type="text" name="title" placeholder="Enter your title"></br>
-
-
-        <input type="Submit" value="Save">
-    </form>
-
+    <div id ="rightbx">
+        <p>
+            <form action="" method="POST">  {% csrf_token %}
+            <h2><b>Submit your Resume Here:</b></h2></br>
+            {{ form.as_p}}
+            <input type="Submit" value="Submit">
+            </form>
+        </p>
 
     </div>
 </div>
