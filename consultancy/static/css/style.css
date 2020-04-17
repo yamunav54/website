@@ -5,31 +5,46 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     /*background-color: blanchedalmond;*/
 }
-html,body {
-    background-color: #dddad9;
-    padding:0px;
-    margin:0px;
+html{
     height:100%;
 
-    justify-content: space-between;
+    margin:0px;
+}
+
+body {
+
+    padding:0px;
+    margin:0px;
     justify-content: centre;
     align-items: centre;
     min-height:100vh;
+    background-color:  #fdfef9 !important;
 }
+
 /* nav ul{
     float: right;;
     margin-right: 30px;
 }*/
 
+header{
+    text-align: centre;
+    background-color:rgb(95, 84, 84);
+    padding:25px;
+    color:rgb(219, 204, 204);
+    height:180px;
+
+}
+
 .tagline {
     float: right;
     text-decoration: none;
     padding-right: 170px;
-    margin-top:25px;
+    margin-top:17px;
     font-size:16px;
     box-sizing: border-box;
     border-radius: 4px;
     display:flex;
+
 }
 
 .callimage img {
@@ -51,13 +66,16 @@ html,body {
     float: right;
     text-decoration: none;
     padding-right: 40px;
-
-    font-size:16px;
     box-sizing: border-box;
     border-radius: 4px;
     display:flex;
 }
-
+.tag h4{
+    font-size:16px;
+}
+.tagline h4{
+    font-size:16px;
+}
 .mailimage img {
     height: 30px;
     width: 30px;
@@ -66,59 +84,38 @@ html,body {
 ul#link {
     padding-top: 30px;
 }
-#left li {
-    list-style: none;
-    display: inline;
-    padding-left: 100px;
-    line-height: 60px;
-    font-size: 24px;
-}
 
-#left li a{
-    text-decoration: none;
-    color:black;
-}
-#tagright{
-    display:inline-block;
-    text-decoration: none;
-}
-#header{
-    background-color:rgb(197, 177, 197);
-    height:30px;
-    width:100%;
-}
 
 
 
 #nav{
-    height:130px;
+
     width:100%;
     /*margin-top:20px;*/
-    background-color:rgb(95, 84, 84);
+
 }
 
 #link li{
     list-style: none;
     display: inline;
     padding-left: 60px;
-    line-height: 60px;
-    font-size: 24px;
-}
+    line-height: 50px;
+    font-size: 28px;
+    padding-bottom: 0ch;
 
-#info li{
-    padding-left:100px;
-    line-height:60px;
-    font-size:20px;
-    display: inline-block;
+}
+ul#link {
+    margin-bottom: 0.7px;
 }
 
 #link li a{
     text-decoration: none;
-    color:black;
+    color:rgb(219, 204, 204);
+
 
 }
 #link li a:hover{
-    background-color: #fff;
+    background-color: rgb(245, 234, 234);
     color:rgb(197, 177, 197);
 }
 
@@ -127,7 +124,6 @@ ul#link {
     display: -webkit-inline-box;
     padding-left: 100px;
     line-height: 30px;
-    font-size: 12px;
     float: left;
 }
 
@@ -138,34 +134,13 @@ ul#link {
 }
 
 
-/*nav ul li {
-    display: inline-block;
-    padding:5px 20px;
-    font-size: 24px;
-    margin-top: 10px;
-    line-height: 20px;
-}
-
-ul li a{
-    padding:5px 10px;
-    float: right;
-    border:1px soild #fff;
-    color:rgb(138, 45, 45);
-    text-decoration: none;
-
-
-}
-ul li a:hover{
-    background-color: #fff;
-    color:#000;
-}*/
 .logo img{
     float: left;
     width:150px;
     height:auto;
     padding-top:30px;
     padding-left: 20px;
-    padding-right: 50px;
+    margin-right: 40px;
 
 }
 
@@ -175,7 +150,7 @@ ul li a:hover{
 
 .maindiv{
     width:800px;
-    height:500px !important;
+    height:550px !important;
     margin:auto;
     background:#000;
     padding:20px 50px;
@@ -318,14 +293,14 @@ ul li a:hover{
 
 #container{
 /*    background:rgb(194, 150, 194);*/
-    height:650px;
+    height:850px;
     width:90%;
     padding-top:40px;
     padding-left:50px;
     margin-right:30px;
 }
 #lftbx{
-    height:590px;
+    height:690px;
     float:left;
     width:50%;
     padding:5px 5px 5px 10px;
@@ -334,7 +309,7 @@ ul li a:hover{
     line-height: 30px;
 }
 #rightbx{
-    height:590px;
+    height:690px;
     float:right;
     width:45%;
     padding:5px 5px 5px 10px;
@@ -350,7 +325,7 @@ ul li a:hover{
 
 #container2{
     /*    background:rgb(194, 150, 194);*/
-    height:450px;
+    height:650px;
     width:90%;
     padding-top:55px;
     padding-left:50px;
@@ -360,7 +335,7 @@ ul li a:hover{
 }
 
 #lftbx1{
-    height:450px;
+    height:570px;
     float:left;
     width:50%;
     padding:5px 5px 5px 10px;
@@ -370,7 +345,7 @@ ul li a:hover{
 }
 
 #rightbx2{
-    height:450px;
+    height:570px;
     float:right;
     width:45%;
     padding:5px 5px 5px 10px;
@@ -381,16 +356,12 @@ ul li a:hover{
 
 
 footer{
-    background-color: rgb(95, 84, 84);
-    height:160px;
-    position:relative;
+    text-align: centre;
+    background-color:rgb(95, 84, 84);
+    padding:10px;
+    color:rgb(219, 204, 204);
 }
-.footerc{
-    padding-left:40%;
-    padding-right:40%;
-    padding-top:90px;
-    background-color: rgb(95, 84, 84);
-}
+
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -438,8 +409,12 @@ footer{
     /*background: #00aff0;*/
     color: white;
   }
+  .fa-phone {
+    margin: 20px 20px;
+  }
   .sociallinks {
-    margin: 20px 20%;
+    margin: 20px 20px;
+    text-align: center;
 
   }
   .sociallinks p{
@@ -447,17 +422,27 @@ footer{
   }
 
 #container3{
-    height:650px;
+    height:700px;
     width:90%;
 
-    padding:40px;
+    padding:20px;
 
-    margin-top:40px;
-    margin-left:20%;
+
+    margin-left:20px;
+
+    padding-left:50px;
+    margin-right:30px;
+    margin-top:30px;
 }
 
+
+#msgtxt h2{
+    text-align: center;
+    padding-top:2px;
+}
+
+
 #message{
-    padding:50px;
     border:ridge;
 
 
@@ -465,10 +450,30 @@ footer{
     font-size:15;
     border-radius: 1ch;
     border-color: aliceblue;
-    margin-bottom:50px;
+
+    height:600px;
+    float:left;
+
+    padding:5px 5px 5px 10px;
+
 }
 #message p{
     line-height:60px;
+
+}
+#map{
+
+    height:600px;
+    float:right;
+    width:45%;
+    padding:5px 5px 5px 10px;
+    font-size:18;
+    border:ridge;
+
+
+}
+#map info {
+    line-height: 30px;
 
 }
 .container4{

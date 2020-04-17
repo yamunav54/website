@@ -1,3 +1,5 @@
+{% load crispy_forms_tags %}
+
 <div id="container">
     <div id ="lftbx">
     <h2><b>Are you looking for a job??</b> </h2><br/>
@@ -18,13 +20,32 @@
 
     </div>
     <div id ="rightbx">
-        <p>
-            <form action="" method="POST">  {% csrf_token %}
-            <h2><b>Submit your Resume Here:</b></h2></br>
-            {{ form.as_p}}
-            <input type="Submit" value="Submit">
-            </form>
-        </p>
+        <div class="form-row">
+            <div class="form-group col-md-11 mb-0">
 
+                <h2><b>Submit your Resume Here:</b></h2></br>
+                <form action="" method="post">  {% csrf_token %}
+
+                    <!--{{form|crispy}}-->
+                    <div class="form-row">
+                        <div class="form-group col-md-6 mb-0">
+                        {{ form.Firstname|as_crispy_field }}
+                        </div>
+                        <div class="form-group col-md-6 mb-0">
+                        {{ form.Lastname|as_crispy_field }}
+                        </div>
+                    </div>
+                    {{ form.Qualification|as_crispy_field }}
+                    {{ form.Email|as_crispy_field }}
+                    {{ form.Phoneno|as_crispy_field }}
+                    {{ form.Experience|as_crispy_field }}
+                    <!--{{ form.ExpectedCTC|as_crispy_field }}-->
+                    {{ form.CV|as_crispy_field }}
+
+                    <button type="SUBMIT">SUBMIT</button>
+
+                </form>
+            </div>
+        </div>
     </div>
 </div>
